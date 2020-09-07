@@ -6,17 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://gnails.github.io">
-  <title>Gnail&#39;s Blog</title>
+  <title>Archives | Gnail&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="JAVA 面试整理 TCP三次握手四次挥手 a. tcp 三次握手,首先客户端发起连接,生成序号x,置syn 为1 ,客户端处于SYN_SEND, 服务端收到后对该包进行确认,序号为y,置SYN,ACK标志位为1,确认号为x+1,处于SYN_RCV; 客户端收到后对其进行确认,ACK 1 确认号y+1,序号为x+1; ,处于established 状态 服务端收到后 处于Established状态">
+  <meta name="description" content="liangfuqi">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Gnail&#39;s Blog">
-<meta property="og:url" content="http://gnails.github.io/JVM%20%E6%95%B4%E7%90%86.html">
+<meta property="og:url" content="http://gnails.github.io/archives/index.html">
 <meta property="og:site_name" content="Gnail&#39;s Blog">
-<meta property="og:description" content="JAVA 面试整理 TCP三次握手四次挥手 a. tcp 三次握手,首先客户端发起连接,生成序号x,置syn 为1 ,客户端处于SYN_SEND, 服务端收到后对该包进行确认,序号为y,置SYN,ACK标志位为1,确认号为x+1,处于SYN_RCV; 客户端收到后对其进行确认,ACK 1 确认号y+1,序号为x+1; ,处于established 状态 服务端收到后 处于Established状态">
+<meta property="og:description" content="liangfuqi">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-09-07T10:49:12.224Z">
-<meta property="article:modified_time" content="2020-09-07T10:48:07.607Z">
 <meta property="article:author" content="liangfuqi">
 <meta name="twitter:card" content="summary">
   
@@ -148,155 +146,43 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
-  <div class="article-inner">
+            
+  
+  
     
-    <div class="article-entry" itemprop="articleBody">
+    
       
-        <h1 id="JAVA-面试整理"><a href="#JAVA-面试整理" class="headerlink" title="JAVA 面试整理"></a>JAVA 面试整理</h1><ol>
-<li><p>TCP三次握手四次挥手</p>
-<p>a. tcp 三次握手,首先客户端发起连接,生成序号x,置syn 为1 ,客户端处于SYN_SEND,</p>
-<p>服务端收到后对该包进行确认,序号为y,置SYN,ACK标志位为1,确认号为x+1,处于SYN_RCV;</p>
-<p>客户端收到后对其进行确认,ACK 1 确认号y+1,序号为x+1; ,处于established 状态</p>
-<p>服务端收到后 处于Established状态</p>
-<p>b. 四次挥手,首先客户端发起断开连接请求,序号为x,确认号为Y,标志位ACK,FIN为1 状态为FIN_WAIT1</p>
-<p> 服务端收到后 发送ACK 序号为Y 确认号为X+1,标志位 ACK为1,状态为CLOSE_WAIT状态</p>
-<p>客户端收到后状态为 FIN_WAIT2状态</p>
-<p>服务端发送断开请求 标志位为 ACK,FIN 为1 ,服务器此时出于LAST_ACK状态,</p>
-<p>客户端收到后发送  ACK为1 服务器,处于TIME_WAIT状态,等待2MSL 为CLOSED状态</p>
-<p>服务端收到后为CLOSED状态</p>
-</li>
-<li><p>Synchronized 于reentrylock有什么区别</p>
-<ol>
-<li>Synchronized 可以自动释放 ,reentrylock不能</li>
-<li>Synchronized 基于虚拟机指令,reentryLock 基于AQS</li>
-<li>Synchronized 不可中断</li>
-<li>Synchronize 不可尝试获取</li>
-<li>Synchronize wait操作不可超时返回</li>
-<li>synchronize 是非公平的</li>
-<li></li>
-</ol>
-</li>
-</ol>
-
       
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/09/07/JVM%20%E6%95%B4%E7%90%86/" class="archive-article-date">
+  	<time datetime="2020-09-07T10:18:31.574Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-07</time>
+</a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
+    	 
+        <div class="article-info info-on-right">
+          
+          
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://gnails.github.io/JVM%20%E6%95%B4%E7%90%86.html" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
   
   
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -320,7 +206,7 @@
 		mathjax: false,
 		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
